@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background-color: #f7f7ff;
+    margin: 0;
+    color: #333131;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+.logo img {
+    width: 90px;
+    height: auto;
+}
+
+
+h1 {
+    font-size: 3.8rem;
+    font-weight: bold;
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
+#main-info p {
+    font-size: 1.1rem;
+}
+
+#application-form {
+    padding: 0 30px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 5px 10px 15px #888888;
+}
+
+h2 {
+    font-size: 1.9rem;
+    margin: 25px 0 0 0;
+}
+
+h4 {
+    font-size: 1.1rem;
+    font-weight: normal;
+    margin: 10px 0 0 0;
+}
+
+#application-form label {
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+#application-form p {
+    font-size: 0.7rem;
+    margin: 5px 0 30px 0;
+    text-align: center;
+}
+
+#application-form a:link,
+#application-form a:active,
+#application-form a:visited,
+#application-form a:hover {
+    color:#ff8480;
+    text-decoration: none;
+}
+
+.input-field {
+    width: 100%;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    background: #F4F4F5;
+    color: gray;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 8px 0 8px 0;
+}
+
+#drive-with-us {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #57eeab;
+    color:#333131;
+    padding: 6px;
+}
+
+footer {
+    background-color: #fffd8c;
+    display: flex;
+    padding: 25px 0;
+}
+
+h5 {
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+}
+
+#footer-info p {
+    font-size: 0.8rem;
+    margin: 0 0 10px 0;
+}
+
+.input-field-footer {
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    border: none;
+    border-radius: 8px;
+}
+
+#hours, #city {
+    font-size: 0.8rem;
+    background: #F4F4F5;
+    color: gray;
+}
+
+#calculate {
+    background: #ff8480;
+    color: #f7f7ff;
+    font-size: 1.1rem;
+    font-weight: bold;
+} 
+
+#footer-social-media img {
+    width: 23px;
+    height: auto;
+}
+
+
+
+/* for Mobile (width: 375px) */
+@media only screen and (max-width: 600px) {
+    header {
+        margin: 5px 40px;
+    }
+
+    main {
+        margin: 5px 40px 40px 40px;
+        flex-flow: column nowrap;
+    }
+
+    .main-info:nth-child(2) {
+        min-height: 250px;
+        background-image: url(images/bg-image/scooter.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain; 
+    }
+
+    h1 {
+        margin: 0;
+    }
+
+    #main-info p {
+        font-size: 1.4rem;
+        margin: 0;
+    }
+
+    #application-form {
+        margin: 20px 0;
+        padding: 20px 30px;
+    }
+
+    h2 {
+        margin: 0;
+    }
+
+    #application-form p {
+        text-align: left;
+        margin-bottom: 10px;
+    }
+
+    #drive-with-us {
+        font-size: 1.2rem;
+    }
+
+    footer {
+        flex-flow: column nowrap;
+        padding-bottom: 0;
+    }
+
+    #footer-info {
+        margin: 0 40px;
+    }
+
+    #footer-social-media {
+        display: flex;
+        margin: 0 40px;
+        justify-content: center;
+    }
+
+    #footer-form {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr 3fr; 
+        grid-template-rows: 30px auto;
+    } 
+
+    .input-field-footer {
+        padding: 5px;
+    }
+
+    #hours, #city {
+        width: 100%;
+    }
+   
+    #calculate {
+        width: 100%;
+        grid-column: 1 / -1; 
+    }
+
+    #footer-social-media img {
+        padding: 20px;
+    }
+
+}
+
+
+
+/* for Tablet (width: 768px) */
+@media only screen and (min-width: 600px) and (max-width: 990px){
+
+    header {
+        margin: 15px 90px;
+    }
+
+    main {
+        margin: 5px 90px 50px 90px;
+    }
+
+    .main-info:nth-child(2) {
+        min-height: 400px;
+        background-image: url(images/bg-image/scooter.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain; 
+    }
+
+    h1 {
+        margin: 0;
+        width: 80%;
+    }
+
+    #main-info p {
+        font-size: 1.4rem;
+        margin: 0;
+        width: 95%;
+
+    }
+
+    #application-form {
+        margin: 20px 0;
+        padding: 20px 30px;
+    }
+
+    h2 {
+        margin: 0;
+    }
+
+    #application-form p {
+        text-align: left;
+        margin-bottom: 10px;
+    }
+
+    #drive-with-us {
+        font-size: 1.2rem;
+    }
+
+    footer {
+        flex-flow: column nowrap;
+        padding-bottom: 0;
+    }
+
+    h5 {
+        font-size: 1.2rem;
+    }
+
+    #footer-info p {
+        font-size: 1rem;
+    }
+
+    #footer-info {
+        margin: 0 90px;
+    }
+
+    #footer-social-media {
+        display: flex;
+        margin: 0 90px;
+        justify-content: center;
+    }
+
+    #footer-social-media img {
+        padding: 20px;
+    }
+
+    #footer-info {
+        width: 70%;
+        margin: 0 0 0 100px;
+    }
+    
+    #footer-form {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 90px 200px 150px;
+        grid-template-rows: 30px;
+    }
+
+    #hours, #city {
+        padding: 10px;
+    }
+
+    #footer-social-media img {
+        padding: 25px;
+    }
+}
+
+
+
+/* for Desktop (width: 1920px) */
+@media only screen and (min-width: 990px) {
+    header {
+        margin: 5px 100px;
+    }
+
+    main {
+        background-image: url(images/bg-image/scooter.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        box-sizing: border-box;
+        display: flex;
+        flex-flow: row nowrap;
+        margin: 40px 100px 40px 100px;
+    }
+
+    .main-info:first-child {
+        width: 34%;
+    }
+    
+    .main-info:nth-child(2) {
+        width: 36%;
+    }
+    
+    .main-info:last-child {
+        width: 30%;
+    }
+
+    #footer-info {
+        width: 70%;
+        margin: 0 0 0 100px;
+    }
+
+    #footer-social-media {
+        width: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin: 0 100px 0 0;
+    }
+    
+    #footer-form {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 90px 200px 150px;
+        grid-template-rows: 30px;
+    }
+
+    #hours, #city {
+        padding: 10px;
+    }
+
+    #footer-social-media img {
+        padding: 25px;
+    }
+
+    #footer-social-media img:last-child {
+        padding-right: 0px;
+    } 
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
